@@ -1,0 +1,268 @@
+@import url('https://fonts.googleapis.com/css2?family=Prompt:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@1,900&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap');
+:root{
+    --rich-black-fogra-29: #001219ff;
+    --ruby-red: #9b2226ff;
+    --aliWhite: #f2f2f2;
+
+    --raisin-black: #252323ff;
+    --slate-gray: #70798cff;
+    --isabelline: #f5f1edff;
+    --bone: #dad2bcff;
+    --grullo: #a99985ff;
+}
+
+body {
+    height: 100vh;
+    margin: 0;
+    font-family: 'Prompt', sans-serif;
+    background-color: var(--aliWhite);
+}
+
+html{
+    height: 100vh;
+}
+
+#topBar{
+    font-family: 'Roboto', sans-serif;    
+    background-color: var(--rich-black-fogra-29);
+    height: 8vh;
+    font-size: 1rem;
+    color: var(--ruby-red);
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+#fullHeightTopBar{
+    font-size: 1.0rem;
+    text-align: center;
+    width: 15%;
+    height: 100%;    
+    background-color: var(--ruby-red);
+}
+
+#topBarLogo{
+    font-family: 'Roboto', sans-serif;    
+    height: 100%;
+    color: white;
+    margin-left: 0.5rem;
+    margin-right: 0.5rem;
+}
+
+#topBarMidSearch{
+    border-radius: 5px;
+    width: 70%;
+    height: 100%;
+}
+
+#topBarMidSearch form{    
+    display: flex;
+    flex-flow: row;
+    align-items: center;
+    flex-wrap: nowrap;
+    align-content: normal;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+#topBarMidSearch form input{
+    font-family: 'Roboto', sans-serif;    
+    height: 100%;
+    width: 80%;
+    height: 2rem;
+}
+
+#topBarMidSearch form button{
+    font-family: 'Roboto', sans-serif;    
+    height: 100%;
+    height: 2rem;
+    display: inline;
+}
+
+#topBarItemsRight{
+    background-color: var(--ruby-red);
+    color: white;
+    height: 100%;
+}
+#topBarItemsRight p{
+    margin-left: 1rem;
+    margin-right: 1rem;
+}
+
+#topBarItemsRight:hover{
+    color: black;
+}
+
+#main{
+    margin-left: 12%;
+    margin-right: 2%;
+}
+
+#filterBar{
+    position: absolute;
+    width: 10%;
+    top: 17%;
+    background: white;
+    border-radius: 0 10px 10px 0;
+}
+
+#sizeFlex{
+    margin-left: 8%;
+    color: black;
+    display: flex;
+    align-content: space-between;
+    flex-direction: column;
+}
+
+#filterBarTitle{
+    text-align: center;
+    color: black;
+    font-family: 'Roboto', sans-serif;   
+    margin: 0;
+    padding: 0;
+}
+
+.row{
+    justify-content: space-around;
+    display: flex;
+    align-content: space-between;
+    flex-direction: column;
+    width: 100%;
+}
+
+.titleRow {
+    font-family: 'Roboto', sans-serif;   
+    margin: 0;
+    padding: 1%;
+}
+
+.mainRow{
+    padding: 2%;
+    border-radius: 10px;
+    background-color: white;
+    font-size: 0.75rem;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    align-content: flex-end;
+    justify-content: space-between;
+}
+
+.mainRowItem{    
+    box-shadow: rgba(17, 17, 26, 0.1) 0px 4px 16px, rgba(17, 17, 26, 0.1) 0px 8px 24px, rgba(17, 17, 26, 0.1) 0px 16px 56px;
+    border-radius: 10px;
+    margin: 0.25rem;
+    background-color: white;
+    width: 18%;
+    height: 100%;
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: column;
+    text-align: center;
+}
+
+.mainRowItemImgContain{
+    width:100%;
+    height: 60%;
+}
+.mainRowItemImgContain img{
+    border-radius: 10px 10px 0 0;
+    height: 100%;
+    width: 100%;
+}
+
+.mainRowItemRest{    
+    width:100%;
+    height: 20%;
+}
+.mainRowItemButton{
+    height: 20%;
+
+}
+.mainRowItemButton button{
+    color: white;
+    font-family: 'Roboto', sans-serif;    
+    border: 0;
+    border-radius: 0 0 10px 10px;
+    background-color: var(--ruby-red);
+    width: 100%;
+    height: 100%;
+}
+
+.mainRowItemButton button:hover{
+    color: black;
+}
+
+#basket {
+    position: fixed;
+    top: 96vh;
+    height: 5vh;
+    left: 75.2%;
+    width: 24.7%;
+} 
+
+#basketVis{
+    border-radius:  10px 10px 0 0;
+    font-family: 'Roboto', sans-serif;    
+    color: white;
+    background-color: var(--ruby-red);
+}
+
+#basket h2{
+    text-align: center;
+    margin: 0;
+    padding: 0;
+}
+
+#basket h4{
+    text-align: left;
+    margin: 0;
+    padding: 0;
+}
+
+#basketInvis {
+    background-color: white;
+    color: black;
+    width: 100%;
+    position: absolute;
+    visibility: hidden;
+}
+
+#check-out{
+    color: white;
+    font-family: 'Roboto', sans-serif;    
+    border: 0;
+    background-color: var(--ruby-red);
+    width: 100%;
+    height: 5vh; 
+}
+
+.itemAndQuant{
+    height: 10vh;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.quantButton{
+    display: inline;
+    width: 25%;
+    height: 50%
+}
+
+.deleteBut {
+    display: inline;
+    width: 25%;
+    height: 50%;
+    background-color: var(--ruby-red);
+    color: white;
+}
